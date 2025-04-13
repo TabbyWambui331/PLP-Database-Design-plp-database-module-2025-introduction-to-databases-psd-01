@@ -1,0 +1,47 @@
+# 📚 Bookstore Database Project
+
+## Overview
+This project is a relational database system designed for managing a bookstore's operations using **MySQL**. It includes tables for books, authors, customers, orders, shipping, payments, and more. The goal is to provide a well-structured, normalized database that supports efficient data storage, retrieval, and analysis.
+
+## 🔧 Tools & Technologies
+- **MySQL** – For database design and implementation
+- **Draw.io** – For designing the ERD (Entity-Relationship Diagram)
+
+## 📌 Project Objectives
+- Design a relational database schema for a bookstore
+- Implement the schema in MySQL
+- Manage data for books, authors, customers, orders, payments, etc.
+- Control user access with roles
+- Run SQL queries for analytics and reporting
+
+---
+
+##  Tables Included
+
+| Table Name          | Description |
+|---------------------|-------------|
+| `book`              | Book details such as title, price, publish date |
+| `author`            | Author names and details |
+| `book_author`       | Many-to-many relationship between books and authors |
+| `book_language`     | Languages a book can be written in |
+| `publisher`         | Book publishers |
+| `customer`          | Bookstore customers |
+| `customer_address`  | Customer-address mapping |
+| `address`           | Address details |
+| `address_status`    | Status of address (current, previous) |
+| `country`           | Country where the customer resides |
+| `cust_order`        | Orders made by customers |
+| `order_line`        | Books included in each order |
+| `shipping_method`   | Shipping options available |
+| `order_status`      | Statuses like pending, shipped, delivered, etc. |
+| `order_history`     | Tracks changes to an order’s status |
+| `payment`           | Payment details like method, amount, and date |
+
+---
+
+-- Database Setup Instructions
+
+1. **Create the Database**
+```sql
+CREATE DATABASE bookstore_db;
+USE bookstore_db;
